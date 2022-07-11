@@ -18,6 +18,17 @@
  * BROWSER POLYFILLS
  */
 
+(window as any).global = window;
+(window as any).process = {
+  env: { DEBUG: undefined },
+};
+
+import 'core-js/es/typed-array';
+import 'core-js/es/object';
+
+(window as any).Zone['__zone_symbol__ignoreConsoleErrorUncaughtError'] = true;
+
+
 /**
  * By default, zone.js will patch all possible macroTask and DomEvents
  * user can disable parts of macroTask/DomEvents patch by setting following flags

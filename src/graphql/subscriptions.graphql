@@ -1,0 +1,409 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    userID
+    user_email
+    user_password
+    user_password_salt
+    user_name
+    user_role
+    user_approved
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    userID
+    user_email
+    user_password
+    user_password_salt
+    user_name
+    user_role
+    user_approved
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    userID
+    user_email
+    user_password
+    user_password_salt
+    user_name
+    user_role
+    user_approved
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateGamePark {
+  onCreateGamePark {
+    parkID
+    park_name
+    park_location
+    park_address
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateGamePark {
+  onUpdateGamePark {
+    parkID
+    park_name
+    park_location
+    park_address
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteGamePark {
+  onDeleteGamePark {
+    parkID
+    park_name
+    park_location
+    park_address
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateImageCollection {
+  onCreateImageCollection {
+    collectionID
+    parkID
+    GamePark {
+      parkID
+      park_name
+      park_location
+      park_address
+      createdAt
+      updatedAt
+    }
+    upload_date_time
+    completed
+    flightID
+    FlightDetails {
+      flightID
+      flight_height
+      flight_type
+      pilotID
+      Pilot {
+        userID
+        user_email
+        user_password
+        user_password_salt
+        user_name
+        user_role
+        user_approved
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateImageCollection {
+  onUpdateImageCollection {
+    collectionID
+    parkID
+    GamePark {
+      parkID
+      park_name
+      park_location
+      park_address
+      createdAt
+      updatedAt
+    }
+    upload_date_time
+    completed
+    flightID
+    FlightDetails {
+      flightID
+      flight_height
+      flight_type
+      pilotID
+      Pilot {
+        userID
+        user_email
+        user_password
+        user_password_salt
+        user_name
+        user_role
+        user_approved
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteImageCollection {
+  onDeleteImageCollection {
+    collectionID
+    parkID
+    GamePark {
+      parkID
+      park_name
+      park_location
+      park_address
+      createdAt
+      updatedAt
+    }
+    upload_date_time
+    completed
+    flightID
+    FlightDetails {
+      flightID
+      flight_height
+      flight_type
+      pilotID
+      Pilot {
+        userID
+        user_email
+        user_password
+        user_password_salt
+        user_name
+        user_role
+        user_approved
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateMessage {
+  onCreateMessage {
+    messageID
+    message_status
+    message_description
+    ImageCollection {
+      collectionID
+      parkID
+      GamePark {
+        parkID
+        park_name
+        park_location
+        park_address
+        createdAt
+        updatedAt
+      }
+      upload_date_time
+      completed
+      flightID
+      FlightDetails {
+        flightID
+        flight_height
+        flight_type
+        pilotID
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+    messageImageCollectionId
+  }
+}
+subscription OnUpdateMessage {
+  onUpdateMessage {
+    messageID
+    message_status
+    message_description
+    ImageCollection {
+      collectionID
+      parkID
+      GamePark {
+        parkID
+        park_name
+        park_location
+        park_address
+        createdAt
+        updatedAt
+      }
+      upload_date_time
+      completed
+      flightID
+      FlightDetails {
+        flightID
+        flight_height
+        flight_type
+        pilotID
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+    messageImageCollectionId
+  }
+}
+subscription OnDeleteMessage {
+  onDeleteMessage {
+    messageID
+    message_status
+    message_description
+    ImageCollection {
+      collectionID
+      parkID
+      GamePark {
+        parkID
+        park_name
+        park_location
+        park_address
+        createdAt
+        updatedAt
+      }
+      upload_date_time
+      completed
+      flightID
+      FlightDetails {
+        flightID
+        flight_height
+        flight_type
+        pilotID
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+    messageImageCollectionId
+  }
+}
+subscription OnCreateImages {
+  onCreateImages {
+    imageID
+    collectionID
+    name
+    bucket_name
+    file_name
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateImages {
+  onUpdateImages {
+    imageID
+    collectionID
+    name
+    bucket_name
+    file_name
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteImages {
+  onDeleteImages {
+    imageID
+    collectionID
+    name
+    bucket_name
+    file_name
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateFlightDetails {
+  onCreateFlightDetails {
+    flightID
+    flight_height
+    flight_type
+    pilotID
+    Pilot {
+      userID
+      user_email
+      user_password
+      user_password_salt
+      user_name
+      user_role
+      user_approved
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateFlightDetails {
+  onUpdateFlightDetails {
+    flightID
+    flight_height
+    flight_type
+    pilotID
+    Pilot {
+      userID
+      user_email
+      user_password
+      user_password_salt
+      user_name
+      user_role
+      user_approved
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteFlightDetails {
+  onDeleteFlightDetails {
+    flightID
+    flight_height
+    flight_type
+    pilotID
+    Pilot {
+      userID
+      user_email
+      user_password
+      user_password_salt
+      user_name
+      user_role
+      user_approved
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePendingInvites {
+  onCreatePendingInvites {
+    inviteID
+    email
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePendingInvites {
+  onUpdatePendingInvites {
+    inviteID
+    email
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePendingInvites {
+  onDeletePendingInvites {
+    inviteID
+    email
+    createdAt
+    updatedAt
+  }
+}
